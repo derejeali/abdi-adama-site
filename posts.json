@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Welcome to Abdi Adama School",
+    "content": "We just opened a new library! Come and visit us.",
+    "image": "assets/images/library.jpg"
+  },
+  {
+    "title": "Sports Day Event",
+    "content": "Join us this Friday for our annual sports day!",
+    "image": "assets/images/sports.jpg"
+  }
+]

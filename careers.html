@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Careers | Abdi Adama School</title>
+
+  <!-- existing school styles -->
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/abdiadama.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/lightbox.css">
+
+  <style>
+
+    /* ✅ Make mobile nav menu full width */
+/* @media (max-width: 768px) { */
+  /* nav.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #063066; /* same menu bg color */
+    /* padding-top: 80px; space for logo area */
+    /* transform: translateX(-100%);
+    transition: 0.3s ease;
+    z-index: 9999;
+    align-items: center; */
+  /* } */ */
+
+  nav.main-nav.active {
+    transform: translateX(0);
+  }
+
+  /* .main-nav .main-menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  } */
+
+  /* .main-nav .main-menu a {
+    color: white !important;
+    font-size: 1.3rem;
+  } */
+/* 
+  .has-submenu .sub-menu {
+    background: rgba(255,255,255,0.1);
+    padding: 10px 0;
+  } */
+
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #f7f9fc;
+      /* margin-top: 2%; */
+      padding: 0;
+    }
+
+    header.main-header {
+      margin-bottom: 60px;
+    }
+
+    .careers-header {
+      background: #063066;
+      color: white;
+      text-align: center;
+      /* padding: 30px 20px; */
+      font-size: 1.5rem;
+      font-weight: 700;
+      height: 12%;
+      margin-left: 25%;
+      width: 50%;
+      align-items: center;
+      align-content: center;
+      align-self: center;
+      alignment-baseline: central;
+      /* margin-top: 4%; */
+    }
+
+    .container {
+      max-width: 950px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .job-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      transition: 0.2s ease;
+    }
+
+    .job-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .job-title {
+      font-size: 1.4rem;
+      color: rgba(22,34,57,0.95);
+      font-weight: 900;
+    }
+
+    .department {
+      color: #666;
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+    }
+
+    .description,
+    .requirements {
+      font-size: 0.95rem;
+      margin-bottom: 0.8rem;
+      line-height: 1.5;
+    }
+
+    .deadline {
+      font-weight: 600;
+      color: #e63946;
+      margin-bottom: 1rem;
+    }
+
+    .apply-btn {
+      background-color: #f5a425;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .no-jobs {
+      text-align: center;
+      color: #666;
+      font-size: 1.1rem;
+      margin-top: 2rem;
+    }
+
+    footer {
+      margin-top: 60px;
+    }
+
+    body {
+      /* background-color: #0b1a33; */
+      background-image: url(assets/images/courses-bggg.jpg);
+      font-family: 'Poppins', sans-serif;
+      color: rgb(0, 0, 0);
+      padding-top: 80px;
+    }
+
+    section.admission-section {
+      background-color: #0b1a33;
+    }
+
+    .admission-section {
+      max-width: 700px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+      margin-bottom: 3%;
+    }
+
+    .form-control {
+      background-color: #22324d;
+      border: none;
+      color: white;
+      padding: 12px 15px;
+    }
+
+    .form-control::placeholder {
+      color: #b5c0d0;
+    }
+
+    .form-control:focus {
+      background-color: #2e4568;
+      box-shadow: none;
+      outline: none;
+      color: white;
+    }
+
+    h2 {
+      color: #f8a81c;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .btn-warning {
+      background-color: #f8a81c;
+      color: #fff;
+      border: none;
+      padding: 12px 25px;
+      font-weight: 600;
+      border-radius: 4px;
+      width: 100%;
+    }
+
+    .btn-warning:hover {
+      background-color: #e69300;
+    }
+  </style>
+ 
+</head>
+<header class="main-header clearfix" role="header" >
+  <div class="logo">
+    <a href="index.html"><em>Abdi Adama</em> School</a>
+  </div>
+  <a href="#menu" class="menu-link menu-trigger"><i style="font-size: 25px;  margin-top: -116px;" class="fa fa-bars"></i></a>
+
+
+<nav id="menu" class="main-nav" role="navigation">
+  <ul class="main-menu">
+
+    <li><a href="index.html">Home</a></li>
+
+    <li class="has-submenu">
+      <a href="about-us.html" onclick="window.location.href='about-us.html';">About Us</a>
+      <ul class="sub-menu">
+        <li><a href="#">What Makes Us Stand Out</a></li>
+        <li><a href="#">Mission & Vision</a></li>
+        <li><a href="#">Our Values</a></li>
+        <li><a href="#">Our Promise to Parents</a></li>
+      </ul>
+    </li>
+
+    <li><a href="#section2">Our School</a></li>
+
+    <li><a href="admissions.html">Admissions</a></li>
+
+    <li><a href="careers.html" onclick="window.location.href='careers.html';">Careers</a></li>
+
+    <li><a href="contact-us.html">Contact Us</a></li>
+
+  </ul>
+</nav>
+
+</header>
+<body>
+
+  <!-- ✅ HEADER INSERTED -->
+  
+
+  <section>
+    <div class="careers-header">Current Job Openings at Abdi Adama</div>
+
+    <div class="container" id="jobsContainer">
+      <p class="no-jobs">Loading available positions...</p>
+    </div>
+  </section>
+
+
+  <!-- ✅ FOOTER INSERTED -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <i class="fa-duotone fa-solid fa-school"></i>
+        <h5>Abdi Adama School</h5>
+      </div>
+      <div>
+        <h4>about us</h4>
+        <ul>
+          <li><a href="#">chairman’s welcome</a></li>
+          <li><a href="#">our mission & vision</a></li>
+          <li><a href="#">governance</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>admissions</h4>
+        <ul>
+          <li><a href="#">admission process</a></li>
+          <li><a href="#">school readiness</a></li>
+          <li><a href="#">scholarships</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>our school</h4>
+        <ul>
+          <li><a href="#">our curriculum</a></li>
+          <li><a href="#">our secondary school</a></li>
+          <li><a href="#">extra-curriculars</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>contact us</h4>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/abdi_adama_school/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="t.me/abdiadamaschool" target="_blank"><i class="fab fa-telegram"></i></a>
+          <a href="https://www.youtube.com/@abdiadamaschool-s1c" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <p class="footer-bottom">
+      © 2025 abdi adama school | all rights reserved | made with ❤️ In Adama
+    </p>
+  </footer>
+
+  <script>
+    const sheetURL = "https://opensheet.elk.sh/16WiK_MfWFmmZA5GeXarCgURqfqkaRD9pGb43_XyS3pM/Vacancies";
+
+    async function loadJobs() {
+      try {
+        const res = await fetch(sheetURL);
+        const data = await res.json();
+        const container = document.getElementById("jobsContainer");
+        container.innerHTML = "";
+
+        if (!data.length) {
+          container.innerHTML = '<p class="no-jobs">No job openings available right now. Please check back later.</p>';
+          return;
+        }
+
+        data.forEach(job => {
+          container.innerHTML += `
+        <div class="job-card">
+          <div class="job-title">${job.JobTitle}</div>
+          <div class="department">${job.Department}</div>
+          <div class="description"><strong>Description:</strong> ${job.Description}</div>
+          <div class="requirements"><strong>Requirements:</strong> ${job.Requirements}</div>
+          <div class="deadline">Deadline: ${job.Deadline}</div>
+          <a href="apply.html?position=${encodeURIComponent(job.JobTitle)}" class="apply-btn">Apply Now</a>
+
+        </div>`;
+        });
+
+      } catch {
+        document.getElementById("jobsContainer").innerHTML = '<p class="no-jobs">Failed to load job listings.</p>';
+      }
+    }
+    loadJobs();
+  </script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const menu = document.getElementById("menu");
+
+  document.querySelector(".menu-trigger").addEventListener("click", function(e) {
+    e.preventDefault();
+    menu.classList.toggle("active");
+  });
+
+  document.querySelectorAll(".has-submenu > a").forEach(link => {
+    link.addEventListener("click", function(e) {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        this.parentElement.classList.toggle("submenu-open");
+      }
+    });
+  });
+
+  document.querySelectorAll(".main-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+      if (window.innerWidth <= 768) {
+        menu.classList.remove("active");
+      }
+    });
+  });
+});
+</script>
+
+</body>
+
+</html>

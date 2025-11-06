@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Abdi Adama School</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/abdiadama.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <link rel="icon" type="image/png" href="favicon.png.png">
+    <style>
+        body {
+            margin-top: 8%;
+        }
+
+        .form-container {
+            max-width: 600px;
+            background: white;
+            margin: auto;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-weight: 500;
+            margin-top: 10px;
+            text-transform: capitalize;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            background: #004aad;
+            color: white;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background: #003b8b;
+        }
+    </style>
+    <header class="main-header clearfix" role="header">
+        <div class="logo">
+            <a href="#"><em>Abdi Adama</em> School</a>
+        </div>
+        <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+        <nav id="menu" class="main-nav" role="navigation">
+            <ul class="main-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="has-submenu"><a href="#section2">About Us</a>
+                    <ul class="sub-menu">
+                        <li><a href="#section2">Who we are?</a></li>
+                        <li><a href="#section3">What we do?</a></li>
+                        <li><a href="#section3">How it works?</a></li>
+                        <li><a href="https://abdiadama.com/about" rel="sponsored" class="external">External URL</a></li>
+                    </ul>
+                </li>
+                <li><a href="#section2">Our School</a>
+                    <!-- <li><a href="admissions.html">Admissions</a> -->
+                    <a href="admissions.html"
+                        style="color: white; font-size: 11px; font: Montserrat; font-weight: 700; text-transform: uppercase;"
+                        onclick="window.location.href='admissions.html';">Admissions</a>
+
+                <li><a href="#section4">Courses</a></li>
+                <li><a href="#section4">Make an Application</a></li>
+                <!-- <li><a href="#section5">Video</a></li> -->
+                <!-- <li><a href="./contact-us.html" target="_self">Contact Us</a></li>
+  -->
+                <a href="contact-us.html"
+                    style="color: white; font-size: 11px; font: Montserrat; font-weight: 700; text-transform: uppercase;"
+                    onclick="window.location.href='contact-us.html';">contact us</a>
+
+            </ul>
+        </nav>
+    </header>
+
+<body>
+    <div class="form-container">
+        <form id="applicationForm">
+            <label>job position</label>
+            <input type="text" id="position" readonly>
+
+            <label>full name</label>
+            <input type="text" id="fullname" required>
+
+            <label>email</label>
+            <input type="email" id="email" required>
+
+            <label>phone number</label>
+            <input type="text" id="phone" required>
+
+            <label>why do you want this position?</label>
+            <textarea id="message" rows="4" required></textarea>
+
+            <button type="submit">submit application</button>
+        </form>
+    </div>
+
+    <p style="" id="response"></p>
+
+
+</body>
+<footer class="footer">
+    <div class="container footer-grid">
+        <div class="footer-brand">
+            <!-- <img src="assets/logo.png" alt="Logo" /> -->
+            <i class="fa-duotone fa-solid fa-school"></i>
+            <h5>Abdi Adama School</h5>
+        </div>
+        <div>
+            <h4>about us</h4>
+            <ul>
+                <li><a href="#">chairman’s welcome</a></li>
+                <li><a href="#">our mission & vision</a></li>
+                <li><a href="#">governance</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>admissions</h4>
+            <ul>
+                <li><a href="#">admission process</a></li>
+                <li><a href="#">school readiness</a></li>
+                <li><a href="#">scholarships</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>our school</h4>
+            <ul>
+                <li><a href="#">our curriculum</a></li>
+                <li><a href="#">our secondary school</a></li>
+                <li><a href="#">extra-curriculars</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>contact us</h4>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/abdi_adama_school/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="t.me/abdiadamaschool" target="_blank">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="https://www.youtube.com/@abdiadamaschool-s1c" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <p class="footer-bottom">
+        © 2025 abdi adama school | all rights reserved | made with ❤️ In Adama
+    </p>
+</footer>
+<!-- <script>
+
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById("position").value = params.get("position") || "";
+
+    const scriptURL = "https://script.google.com/macros/s/AKfycbx-ej4FqwVWf0J2N-LErYFEmzinAsF4EqXdvWH-H1qRrLp1_ETDHh5DKCVuHF_oT1oQ/exec"; // your script URL
+
+    document.getElementById("applicationForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const formData = new FormData();
+        formData.append("fullname", document.getElementById("fullname").value);
+        formData.append("phone", document.getElementById("phone").value);
+        formData.append("email", document.getElementById("email").value);
+        formData.append("position", document.getElementById("position").value);
+        formData.append("message", document.getElementById("message").value);
+
+        fetch(scriptURL, { method: "POST", body: formData })
+            .then(response => {
+                document.getElementById("response").innerText = "✅ Application Submitted Successfully!";
+                document.getElementById("applicationForm").reset();
+            })
+            .catch(error => {
+                document.getElementById("response").innerText = "❌ Submission Failed.";
+            });
+    });
+
+
+</script> -->
+<script>
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById("position").value = params.get("position") || "";
+
+    const scriptURL = "https://script.google.com/macros/s/AKfycbx-ej4FqwVWf0J2N-LErYFEmzinAsF4EqXdvWH-H1qRrLp1_ETDHh5DKCVuHF_oT1oQ/exec";
+
+    document.getElementById("applicationForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const formData = new FormData();
+        formData.append("fullname", document.getElementById("fullname").value);
+        formData.append("phone", document.getElementById("phone").value);
+        formData.append("email", document.getElementById("email").value);
+        formData.append("position", document.getElementById("position").value);
+        formData.append("message", document.getElementById("message").value);
+
+        fetch(scriptURL, { method: "POST", body: formData })
+            .then(response => {
+                // create big alert
+                const responseEl = document.getElementById("response");
+                responseEl.innerHTML = `
+                        <div style="
+            background-color: #d4edda;
+            color: #155724;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-top: 20px;
+            border: 1px solid #c3e6cb;
+        ">
+            ✅ Application Submitted Successfully!
+        </div>
+    `;
+                document.getElementById("applicationForm").reset();
+
+                // redirect after 2.5 seconds
+                setTimeout(() => {
+                    window.location.href = "thankyou.html";
+                }, 2500);
+            })
+
+            .catch(error => {
+                const responseEl = document.getElementById("response");
+                responseEl.innerText = "❌ Submission Failed.";
+                responseEl.style.color = "red";
+                responseEl.style.fontWeight = "600";
+                responseEl.style.fontSize = "1.1rem";
+            });
+    });
+</script>
+
+
+
+</body>
+
+</html>

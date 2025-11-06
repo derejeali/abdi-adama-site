@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Abdi Adama School</title>
+
+    Bootstrap core CSS
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    Additional CSS Files
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/abdiadama.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <link rel="icon" type="image/png" href="favicon.png.png">
+    <style>
+        body {
+            background-image: url(assets/images/courses-bggg.jpg);
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            /* space between icons */
+            justify-content: center;
+            /* center them */
+            margin: 2px 0;
+        }
+
+        .social-icons a {
+            color: #ffffff;
+            /* default icon color */
+            font-size: 30px;
+            /* icon size */
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #ff4500;
+            /* change color on hover */
+        }
+
+        .about-box {
+            margin-bottom: 39px;
+        }
+
+        .about-box h4 {
+            margin-top: 1px;
+            color: #f5a425;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .about-box p {
+            margin-top: 1px;
+            line-height: 1.7;
+            color: white;
+        }
+    </style>
+    <style>
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-10px);
+            }
+
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        .about-card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 30px 20px;
+}
+
+.about-card-content {
+  display: flex;
+  background: #003B8E; /* dark blue like example */
+  color: #fff;
+  border-radius: 25px;
+  padding: 40px;
+  max-width: 1200px;
+  align-items: center;
+  gap: 20px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.about-image {
+  flex: 1;
+  text-align: right;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  object-fit: cover;
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .about-card-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-image {
+    text-align: center;
+  }
+}
+
+    </style> 
+</head>
+<header class="main-header clearfix" role="header">
+    <div class="logo">
+        <a href="index.html"><em>Abdi Adama</em> School</a>
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+        <ul class="main-menu">
+            <li><a href="index.html">Home</a></li>
+            <li class="has-submenu"><a href="about-us.html">About Us</a>
+                <ul class="sub-menu">
+                    <li><a href="#">What Makes Us Stand out</a></li>
+                    <li><a href="about-us.html#section2">Mission & Vision</a></li>
+                    <li><a href="#">Our Values</a></li>
+                    <li><a href="#">Our Promise to Parents</a></li>
+                </ul>
+            </li>
+            <li><a href="#section2">Our School</a>
+                <!-- <li><a href="admissions.html">Admissions</a> -->
+                <a href="admissions.html"
+                    style="color: white; font-size: 11px; font: Montserrat; font-weight: 700; text-transform: uppercase;"
+                    onclick="window.location.href='admissions.html';">Admissions</a>
+
+            <li><a href="careers.html"
+                    style="color: white; font-size: 11px; font: Montserrat; font-weight: 700; text-transform: uppercase;"
+                    onclick="window.location.href='careers.html';">Careers</a></li>
+            <li><a href="#section4">Make an Application</a></li> -->
+            <!-- <li><a href="#section5">Video</a></li> -->
+            <li><a href="./contact-us.html" target="_self">Contact Us</a></li>
+
+            <a href="contact-us.html"
+                style="color: white; font-size: 11px; font: Montserrat; font-weight: 700; text-transform: uppercase;"
+                onclick="window.location.href='contact-us.html';">contact us</a>
+
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <section class="about-card">
+        <div class="about-card-content" style="margin-top: 2%;">
+            <div class="about-text">
+                <h3>Mr.<span style="color: #f5a425;"> GIRMA LEMI</span> <br> Founders Welcome Message</h3>
+                <p>
+                    welcome to abdi adama school, a place built from our shared belief that every child deserves an 
+                    environment where learning feels inspiring, meaningful, 
+                    and joyful. when we founded abdi adama school, our dream 
+                    was to create a place where children feel seen, supported, 
+                    and encouraged to discover their full potential. we wanted a 
+                    school that goes beyond textbooks — a place where curiosity is welcomed, 
+                    kindness is practiced, and learning feels alive. seeing our students grow in 
+                    confidence and character has been our greatest achievement, and 
+                    we remain committed to nurturing every child with care and purpose.  </p>
+            </div>
+
+            <div class="about-image">
+                <img src="assets/images/founderone.JPG" style="height: 350px; width: 300px;" alt="Founders Image">
+            </div>
+        </div>
+    </section>
+<section class="about-card" >
+        <div class="about-card-content" >
+            <div class="about-image" style="margin-right: 9%;">
+                <img src="assets/images/FOUNDERTWO.jpg" style="height:350px; width: 300px;" alt="Founders Image">
+            </div>
+            <div class="about-text" style="margin-right: 11%;">
+                <h3>Ms.<span style="color: #f5a425;"> ABERASH  ESHETU</span> <br> Founders Welcome Message</h3>
+                
+                <p>As one of the founders, I share a deep belief that education has the 
+                    power to transform lives and shape better communities In our country. <br>We founded this 
+                    school to offer a strong foundation rooted in values, discipline, and creativity. 
+                    <br>Our vision is to inspire each student to think boldly, act responsibly, and dream 
+                    fearlessly. we thank every parent, teacher, and student who has joined us on this journey — 
+                    together, we continue building a brighter future for our community.</p>
+            </div>
+
+            
+        </div>
+    </section>
+
+<section class="about-card">
+        <div class="about-card-content" style="margin-top: 2%;">
+            <div class="about-text">
+                <h3>Ms.<span style="color: #f5a425;"> YODIT YOHANNES</span> <br>welcome message from the director
+</h3>
+                <p>
+It is my pleasure to welcome you to abdi adama school, 
+where every student is guided with care, respect, and high expectations. 
+our mission is to create a safe and supportive learning atmosphere where each child 
+can develop academically, socially, and emotionally. we work closely with families and our 
+dedicated team of teachers to ensure that students receive the best opportunities to explore 
+their potential. thank you for choosing to be part of our school community. 
+together, we look forward to shaping strong minds, positive values, and bright futures.   </div>
+
+            <div class="about-image">
+                <img src="assets/images/DIRECTOR.jpg" style="height: 350px; width: 300px;" alt="Founders Image">
+            </div>
+        </div>
+    </section>
+    <section class="section about-section" id="about-us" style="padding-top: 120px; padding-bottom: 80px;">
+        <div class="container">
+
+            <div class="section-heading text-center" style="margin-bottom: 60px;">
+                <h2 style="text-transform: uppercase; font-weight: 700;">
+                    what makes us <span style="color:#004aad;">different</span>
+                </h2>
+                <span style="color: white;">our culture & our values</span>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div class="about-box">
+                        <i class="fa-solid fa-shield-check" style="font-size: 40px; color:#004aad;"></i>
+                        <h4>integrity</h4>
+                        <p>
+                            At Abdi Adama School we believe in doing what is right — always. our community encourages
+                            honesty,
+                            responsibility and respect. we help students build strong moral character that guides
+                            them for life.
+                        </p>
+                    </div>
+
+                    <div class="about-box">
+                        <i class="fa-solid fa-users-line" style="font-size: 40px; color:#004aad;"></i>
+                        <h4>leadership</h4>
+                        <p>
+                            Every student has the ability to lead. through teamwork, projects and school activities,
+                            we help learners build confidence, empathy and the courage to inspire others.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="about-box">
+                        <i class="fa-solid fa-graduation-cap" style="font-size: 40px; color:#004aad;"></i>
+                        <h4>growth & success</h4>
+                        <p>
+                            Success is not only about grades — it is about growth. In Abdi Adama we teach students to
+                            set goals,
+                            work hard, learn from challenges, and believe in their own potential.
+                        </p>
+                    </div>
+
+                    <div class="about-box">
+                        <i class="fa-solid fa-infinity" style="font-size: 40px; color:#004aad;"></i>
+                        <h4>lifelong learning</h4>
+                        <p>
+                            Learning does not end in the classroom. we encourage curiosity, creativity and
+                            exploration — helping students become lifelong learners ready for an ever-changing world.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- mission & vision section -->
+    <section class="section mission-section" data-section="section2" style="background:#f5a425; padding: 100px 0;">
+        <div class="container">
+
+            <div class="section-heading text-center" style="margin-bottom: 60px;">
+                <h2 style="text-transform: uppercase; font-weight:700;">
+                    mission & <span style="color:#004aad;">vision</span>
+                </h2>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-6">
+                    <h3 style="font-weight:700; color:#004aad;">Vision</h3>
+                    <p style="margin-top: 10px;">
+                        To provide meaningful, modern and value-based education that prepares students to become
+                        confident thinkers, problem-solvers and leaders — ready to contribute to the future of
+                        ethiopia and the world.
+                    </p>
+                </div>
+
+                <div class="col-md-6">
+                    <h3 style="font-weight:700; color:#004aad;">Mission</h3>
+                    <p style="margin-top: 10px;">
+                        To be recognized as a leading school where academic excellence meets strong character
+                        development. we proudly teach with international quality while honoring ethiopian culture,
+                        identity and tradition.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+<section>
+    <div class="row" style="margin-left: 3%;">
+
+                <div class="col-md-6">
+                    <h3 style="font-weight:700; color:#004aad;">Our Promise to Parents</h3>
+                    <p style="margin-top: 10px; color: white;">
+                        At abdi adama school, we understand that you are placing great trust in us 
+                        when you choose our school for your child. we promise to provide a safe, 
+                        respectful, and encouraging environment where every student is guided to 
+                        grow academically, emotionally, socially, and morally. we believe in open 
+                        communication and partnership with parents, because we know that education 
+                        is most effective when school and family work together. we are committed to 
+                        nurturing confidence, curiosity, discipline, and strong values in every 
+                        student, while ensuring that each child is seen, heard, and supported every 
+                        step of the way. your child’s success is our shared goal, and we will always work with 
+                        dedication and integrity to help them reach their full potential.
+                    </p>
+                </div>
+
+                <div class="col-md-6">
+                    <img src="assets/images/schoolBuilding.jpg" alt="">
+                </div>
+
+            </div>
+
+</section>
+    
+</body>
+
+
+</html>

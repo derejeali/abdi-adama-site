@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Abdi Adama School</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/abdiadama.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+</head>
+<header class="main-header clearfix" role="header">
+    <div class="logo">
+        <a href="#"><em>Abdi Adama</em> School</a>
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+        <ul class="main-menu">
+            <li><a href="index.html">Home</a></li>
+            <li class="has-submenu"><a href="#section2">About Us</a>
+                <ul class="sub-menu">
+                    <li><a href="#section2">Who we are?</a></li>
+                    <li><a href="#section3">What we do?</a></li>
+                    <li><a href="#section3">How it works?</a></li>
+                    <li><a href="https://abdiadama.com/about" rel="sponsored" class="external">External URL</a></li>
+                </ul>
+            </li>
+            <li><a href="#section2">Our School</a>
+            <li><a href="admissions.html">Admissions</a>
+            <li><a href="#section4">Courses</a></li>
+            <li><a href="#section4">Make an Application</a></li>
+            <!-- <li><a href="#section5">Video</a></li> -->
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<style>
+    body {
+        padding-top: 120px;
+        /* adjust this based on your header height */
+    }
+
+    body {
+        background-color: #0b1a33;
+        background-image: url(assets/images/courses-bggg.jpg);
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .contact-section {
+        max-width: 600px;
+        margin: 80px auto;
+        background: rgba(255, 255, 255, 0.05);
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .form-control {
+        background-color: #22324d;
+        border: none;
+        color: white;
+        padding: 12px 15px;
+    }
+
+    .form-control::placeholder {
+        color: #b5c0d0;
+    }
+
+    .form-control:focus {
+        background-color: #2e4568;
+        box-shadow: none;
+        outline: none;
+        color: white;
+    }
+
+    .btn-warning {
+        background-color: #f8a81c;
+        color: #fff;
+        border: none;
+        padding: 12px 25px;
+        font-weight: 600;
+        border-radius: 4px;
+    }
+
+    .btn-warning:hover {
+        background-color: #e69300;
+    }
+
+    h2 {
+        color: #f8a81c;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    section.contact-section {
+        background-color: #0b1a33;
+    }
+    #posts {
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.post {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+</style>
+
+<body>
+
+
+
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <form id="contactForm" onsubmit="sendMail(); return false;">
+            <div class="mb-3">
+                <input type="text" class="form-control" id="name" placeholder="Your Name" required />
+            </div>
+            <div class="mb-3">
+                <input type="email" class="form-control" id="email" placeholder="Your Email" required />
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control" id="message" rows="4" placeholder="Your message..." required></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-warning">SEND MESSAGE NOW</button>
+            </div>
+        </form>
+    </section>
+    <!-- <div>
+<li><a href="posts.json">post</a></li>
+    </div>
+    <div>
+        <section id="posts">
+  <h2>Latest Posts</h2>
+  <div id="post-container"></div> -->
+</section>
+
+    </div>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <i class="fa-duotone fa-solid fa-school"></i>
+                <h5>Abdi Adama School</h5>
+            </div>
+            <div>
+                <h4>about us</h4>
+                <ul>
+                    <li><a href="#">chairman’s welcome</a></li>
+                    <li><a href="#">our mission & vision</a></li>
+                    <li><a href="#">governance</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>admissions</h4>
+                <ul>
+                    <li><a href="#">admission process</a></li>
+                    <li><a href="#">school readiness</a></li>
+                    <li><a href="#">scholarships</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>our school</h4>
+                <ul>
+                    <li><a href="#">our curriculum</a></li>
+                    <li><a href="#">our secondary school</a></li>
+                    <li><a href="#">extra-curriculars</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>contact us</h4>
+                <ul>
+                    <li><a href="#">instagram</a></li>
+                    <li><a href="#">facebook</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-bottom">
+            © 2025 abdi adama school | all rights reserved | made with ❤️ In Adama
+        </p>
+    </footer>
+
+    <!-- ✅ include EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript">
+        // initialize emailjs
+        (function () {
+            emailjs.init("h-pjBhUSf2AS5pgV4"); // ✅ your EmailJS public key
+        })();
+
+        function sendMail() {
+            var params = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                message: document.getElementById("message").value,
+            };
+
+            const serviceID = "service_ilxce5d";   // ✅ your service ID
+            const templateID = "template_796gmuk"; // ✅ your template ID
+
+            emailjs.send(serviceID, templateID, params)
+                .then((res) => {
+                    document.getElementById("name").value = "";
+                    document.getElementById("email").value = "";
+                    document.getElementById("message").value = "";
+                    console.log("Success:", res);
+                    alert("✅ Your Message Was Sent Successfully To Abdi Adama School Admin");
+                })
+                .catch((err) => {
+                    console.error("Error:", err);
+                    alert("❌ Failed to send. Please check console for details.");
+                });
+        }
+        
+    </script>
+<script>
+fetch('posts.json')
+  .then(response => response.json())
+  .then(posts => {
+    const container = document.getElementById('post-container');
+    posts.forEach(post => {
+      const postEl = document.createElement('div');
+      postEl.classList.add('post');
+      postEl.innerHTML = `
+        <h3>${post.title}</h3>
+        <img src="${post.image}" alt="${post.title}" style="max-width:100%;height:auto;">
+        <p>${post.content}</p>
+      `;
+      container.appendChild(postEl);
+    });
+  })
+  .catch(err => console.error('Error loading posts:', err));
+</script>
+
+</body>
+
+</html>
