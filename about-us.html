@@ -144,41 +144,41 @@
     </style> 
 </head>
 <header class="main-header clearfix" role="header">
-    <div class="logo">
-        <a href="index.html"><em>Abdi Adama</em> School</a>
-    </div>
-    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
-    <nav id="menu" class="main-nav" role="navigation">
-        <ul class="main-menu">
-            <li><a href="index.html">Home</a></li>
-            <li class="has-submenu"><a href="about-us.html">About Us</a>
-                <ul class="sub-menu">
-                    <li><a href="#">What Makes Us Stand out</a></li>
-                    <li><a href="about-us.html#section2">Mission & Vision</a></li>
-                    <li><a href="#">Our Values</a></li>
-                    <li><a href="#">Our Promise to Parents</a></li>
-                </ul>
-            </li>
-            <li><a href="#section2">Our School</a>
-                <!-- <li><a href="admissions.html">Admissions</a> -->
-                <a href="admissions.html"
-                    style="color: white; font-size: 11px; font: Montserrat; font-weight: 700; text-transform: uppercase;"
-                    onclick="window.location.href='admissions.html';">Admissions</a>
+  <div class="logo">
+    <a href="index.html"><em>Abdi Adama</em> School</a>
+  </div>
+  <a href="#menu" class="menu-link menu-trigger"><i style="font-size: 25px;  margin-top: -116px;"
+      class="fa fa-bars"></i></a>
 
-            <li><a href="careers.html"
-                    style="color: white; font-size: 11px; font: Montserrat; font-weight: 700; text-transform: uppercase;"
-                    onclick="window.location.href='careers.html';">Careers</a></li>
-            <li><a href="#section4">Make an Application</a></li> -->
-            <!-- <li><a href="#section5">Video</a></li> -->
-            <li><a href="./contact-us.html" target="_self">Contact Us</a></li>
 
-            <a href="contact-us.html"
-                style="color: white; font-size: 11px; font: Montserrat; font-weight: 700; text-transform: uppercase;"
-                onclick="window.location.href='contact-us.html';">contact us</a>
+  <nav id="menu" class="main-nav" role="navigation">
+    <ul class="main-menu">
 
+      <li><a href="index.html">Home</a></li>
+
+      <li class="has-submenu">
+        <a href="about-us.html">About Us</a>
+        <ul class="sub-menu">
+          <li><a href="about-us.html#about-us">What Makes Us Stand Out</a></li>
+          <li><a href="about-us.html#mission-vision">Mission & Vision</a></li>
+          <li><a href="about-us.html#about-us">Our Values</a></li>
+          <li><a href="about-us.html#promise">Our Promise to Parents</a></li>
         </ul>
-    </nav>
+      </li>
+
+      <li><a href="ourschool.html">Our School</a></li>
+
+      <li><a href="admissions.html">Admissions</a></li>
+
+      <li><a href="careers.html">Careers</a></li>
+
+      <li><a href="contact-us.html">Contact Us</a></li>
+
+    </ul>
+  </nav>
+
 </header>
+
 
 <body>
     <section class="about-card">
@@ -241,11 +241,11 @@ together, we look forward to shaping strong minds, positive values, and bright f
             </div>
         </div>
     </section>
-    <section class="section about-section" id="about-us" style="padding-top: 120px; padding-bottom: 80px;">
+    <section class="section about-section" id="about-us" data-section="about-us" style="padding-top: 120px; padding-bottom: 80px;">
         <div class="container">
 
             <div class="section-heading text-center" style="margin-bottom: 60px;">
-                <h2 style="text-transform: uppercase; font-weight: 700;">
+                <h2  style="text-transform: uppercase; font-weight: 700;">
                     what makes us <span style="color:#004aad;">different</span>
                 </h2>
                 <span style="color: white;">our culture & our values</span>
@@ -302,7 +302,7 @@ together, we look forward to shaping strong minds, positive values, and bright f
 
 
     <!-- mission & vision section -->
-    <section class="section mission-section" data-section="section2" style="background:#f5a425; padding: 100px 0;">
+    <section class="section mission-vision" id="mission-vision" style="background:#f5a425; padding: 100px 0;">
         <div class="container">
 
             <div class="section-heading text-center" style="margin-bottom: 60px;">
@@ -338,7 +338,7 @@ together, we look forward to shaping strong minds, positive values, and bright f
 <section>
     <div class="row" style="margin-left: 3%;">
 
-                <div class="col-md-6" style="">
+                <div class="col-md-6" id="promise" style="">
                     <h3 style="font-weight:700; margin-top: 20%; margin-left: 4%; color:#004aad;">Our Promise to Parents</h3>
                     <p style="  margin-left: 4%; margin-top: 14px; color: white;">
                         At <span class="span-color">Abdi Adama</span> school, we understand that you are placing great trust in us 
@@ -355,18 +355,18 @@ together, we look forward to shaping strong minds, positive values, and bright f
                 </div>
 
                 <div class="col-md-6 align-items-center" >
-                    <img style="margin-top: 54px; height: 400px; width: 400px ; padding-left: 10%;" src="assets/images/schoolBuilding.jpg" alt="">
+                    <img style="margin-top: 54px; height: 400px; width: 600px ; margin-bottom: 10px; padding-left: 2%; border-radius: 5%;" src="assets/images/promise.jpg" alt="">
                 </div>
 
             </div>
 
 </section>
-<footer class="footer">
-    <div class="container footer-grid col-md-12" style="width: 980px;">
+    
+  <footer class="footer" style="padding-left: 5%;">
+    <div class="container footer-grid col-md-12" >
       <div class="footer-brand">
-        <!-- <img src="assets/logo.png" alt="Logo" /> -->
-        <i class="fa-duotone fa-solid fa-school"></i>
-        <h5>Abdi Adama School</h5>
+        <img src="assets/images/logo-abdi.png" alt="">
+        <h5 style="font-weight: 800;">ABDI ADAMA SCHOOL</h5>
       </div>
       <div>
         <h4>about us</h4>
@@ -393,20 +393,14 @@ together, we look forward to shaping strong minds, positive values, and bright f
           <li><a href="#">extra-curriculars</a></li>
         </ul>
       </div>
-      <div>
-        <h4>Careers</h4>
-        <ul>
-          <li><a href="careers.html">Work with us</a></li>
 
-        </ul>
-      </div>
       <div>
-        <h4 >contact us</h4>
-        <div class="social-icons" style=" width: max-content; text-align: left; padding-top: 0%;">
+        <h4>contact us</h4>
+        <div class="social-icons" style="  width: max-content; text-align: left;">
           <ul style="list-style: none; ">
-            <li >
+            <li>
               <a href="https://www.instagram.com/abdi_adama_school/" target="_blank">
-                <i class="fab fa-instagram"> Instagram</i>
+                <i class="fab fa-instagram " style="padding-top: -20px;"> Instagram</i>
               </a>
             </li>
             <li><a href="t.me/abdiadamaschool" target="_blank">
@@ -420,13 +414,13 @@ together, we look forward to shaping strong minds, positive values, and bright f
         </div>
       </div>
     </div>
-    <p class="footer-bottom">
-      © 2025 abdi adama school | all rights reserved | made with ❤️ In Adama
-    </p>
-  </footer>
 
-    
+  </footer>
+  <p class="footer-botttom" style="margin-bottom: 0%;">
+  © <span id="current-year"></span> abdi adama school | all rights reserved | made with ❤️ in adama
+</p>
 </body>
 
+  <script src="assets/js/custom.js"></script>
 
 </html>
