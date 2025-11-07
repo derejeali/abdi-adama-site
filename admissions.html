@@ -2,193 +2,185 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Student Admission | Abdi Adama School</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Admission | Abdi Adama School</title>
 
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/abdiadama.css">
+    <link rel="icon" type="image/png" href="favicon.png.png">
 
-    <link rel="stylesheet" href="assets/css/abdiadama.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/lightbox.css">
-    <header class="main-header clearfix" role="header">
-        <div class="logo">
-            <a href="#"><em>Abdi Adama</em> School</a>
-        </div>
-        <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
-        <nav id="menu" class="main-nav" role="navigation">
-            <ul class="main-menu">
-                <li><a href="index.html">Home</a></li>
-                <li class="has-submenu"><a href="#section2">About Us</a>
-                    <ul class="sub-menu">
-                        <li><a href="#section2">Who we are?</a></li>
-                        <li><a href="#section3">What we do?</a></li>
-                        <li><a href="#section3">How it works?</a></li>
-                        <li><a href="https://abdiadama.com/about" rel="sponsored" class="external">External URL</a></li>
-                    </ul>
-                </li>
-                <li><a href="#section2">Our School</a>
-                <li><a href="admissions.html">Admissions</a>
-                <li><a href="#section4">Courses</a></li>
-                <li><a href="#section4">Make an Application</a></li>
-                <!-- <li><a href="#section5">Video</a></li> -->
-                <li><a href="contact-us.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <style>
-        body {
-            /* background-color: #0b1a33; */
-            background-image: url(assets/images/courses-bggg.jpg);
-            font-family: 'Poppins', sans-serif;
-            color: white;
-            padding-top: 120px;
-        }
-        section.admission-section{
-background-color: #0b1a33;        }
-        .admission-section {
-            max-width: 700px;
-            margin: auto;
-            background: rgba(255, 255, 255, 0.05);
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-            margin-bottom: 3%;
-        }
 
-        .form-control {
-            background-color: #22324d;
-            border: none;
-            color: white;
-            padding: 12px 15px;
-        }
+  <style>
+    body {
+      background-image: url(assets/images/courses-bggg.jpg);
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      padding-top: 120px;
+    }
 
-        .form-control::placeholder {
-            color: #b5c0d0;
-        }
+    section.admission-section {
+      background-color: #0b1a33;
+    }
 
-        .form-control:focus {
-            background-color: #2e4568;
-            box-shadow: none;
-            outline: none;
-            color: white;
-        }
+    .admission-section {
+      max-width: 700px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+      margin-bottom: 3%;
+    }
 
-        h2 {
-            color: #f8a81c;
-            font-weight: 700;
-            text-transform: uppercase;
-            text-align: center;
-            margin-bottom: 25px;
-        }
+    .form-control {
+      background-color: #22324d;
+      border: none;
+      color: white;
+      padding: 12px 15px;
+    }
 
-        .btn-warning {
-            background-color: #f8a81c;
-            color: #fff;
-            border: none;
-            padding: 12px 25px;
-            font-weight: 600;
-            border-radius: 4px;
-            width: 100%;
-        }
+    .form-control::placeholder {
+      color: #b5c0d0;
+    }
 
-        .btn-warning:hover {
-            background-color: #e69300;
-        }
-    </style>
+    h2 {
+      color: #f8a81c;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .btn-warning {
+      background-color: #f8a81c;
+      color: #fff;
+      padding: 12px 25px;
+      width: 100%;
+      border-radius: 4px;
+    }
+  </style>
 </head>
+<header class="main-header clearfix" role="header">
+  <div class="logo">
+    <a href="index.html"><em>Abdi Adama</em> School</a>
+  </div>
+  <a href="#menu" class="menu-link menu-trigger"><i style="font-size: 25px;  margin-top: -116px;"
+      class="fa fa-bars"></i></a>
+
+
+  <nav id="menu" class="main-nav" role="navigation">
+    <ul class="main-menu">
+
+      <li><a href="index.html">Home</a></li>
+
+      <li class="has-submenu">
+        <a href="about-us.html">About Us</a>
+        <ul class="sub-menu">
+          <li><a href="about-us.html#about-us">What Makes Us Stand Out</a></li>
+          <li><a href="about-us.html#mission-vision">Mission & Vision</a></li>
+          <li><a href="about-us.html#about-us">Our Values</a></li>
+          <li><a href="about-us.html#promise">Our Promise to Parents</a></li>
+        </ul>
+      </li>
+
+      <li><a href="ourschool.html">Our School</a></li>
+
+      <li><a href="admissions.html">Admissions</a></li>
+
+      <li><a href="careers.html">Careers</a></li>
+
+      <li><a href="contact-us.html">Contact Us</a></li>
+
+    </ul>
+  </nav>
+
+</header>
 
 <body>
 
-    <!-- <header class="main-header text-center mb-4">
-        <h1><span style="color:#f8a81c;">Abdi Adama</span> School</h1>
-        <h5>Student Admission Form</h5>
-    </header> -->
+  <section class="admission-section">
+    <h2>Admission Form</h2>
+    <form id="admissionForm">
+      <div class="mb-3">
+        <input type="text" class="form-control" id="student_name" placeholder="Student Full Name" required>
+      </div>
 
-    <section class="admission-section">
-        <h2>Admission Form</h2>
-        <form id="admissionForm">
-            <div class="mb-3">
-                <input type="text" class="form-control" id="student_name" placeholder="Student Full Name" required>
-            </div>
-            <div class="row">
-                <div class="col-md-6 mb-3">
-                    <input type="number" class="form-control" id="student_age" placeholder="Age" required>
-                </div>
-                <div class="col-md-6 mb-3">
-                    <input type="text" class="form-control" id="student_grade" placeholder="Applying for Grade"
-                        required>
-                </div>
-            </div>
-            <div class="mb-3">
-                <input type="text" class="form-control" id="parent_name" placeholder="Parent/Guardian Name" required>
-            </div>
-            <div class="row">
-                <div class="col-md-6 mb-3">
-                    <input type="email" class="form-control" id="parent_email" placeholder="Parent Email" required>
-                </div>
-                <div class="col-md-6 mb-3">
-                    <input type="tel" class="form-control" id="parent_phone" placeholder="Parent Phone Number" required>
-                </div>
-            </div>
-            <div class="mb-3">
-                <input type="text" class="form-control" id="previous_school" placeholder="Previous School (if any)">
-            </div>
-            <div class="mb-3">
-                <textarea class="form-control" id="notes" rows="4" placeholder="Additional Information..."></textarea>
-            </div>
-            <button type="submit" class="btn btn-warning">Submit Application</button>
-        </form>
-    </section>
-    <section>
-    <footer class="footer">
-        <div class="container footer-grid">
-            <div class="footer-brand">
-                <i class="fa-duotone fa-solid fa-school"></i>
-                <h5>Abdi Adama School</h5>
-            </div>
-            <div>
-                <h4>about us</h4>
-                <ul>
-                    <li><a href="#">chairman’s welcome</a></li>
-                    <li><a href="#">our mission & vision</a></li>
-                    <li><a href="#">governance</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>admissions</h4>
-                <ul>
-                    <li><a href="#">admission process</a></li>
-                    <li><a href="#">school readiness</a></li>
-                    <li><a href="#">scholarships</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>our school</h4>
-                <ul>
-                    <li><a href="#">our curriculum</a></li>
-                    <li><a href="#">our secondary school</a></li>
-                    <li><a href="#">extra-curriculars</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>contact us</h4>
-                <ul>
-                    <li><a href="#">instagram</a></li>
-                    <li><a href="#">facebook</a></li>
-                </ul>
-            </div>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <input type="number" class="form-control" id="student_age" placeholder="Age" required>
         </div>
-        <p class="footer-bottom">
-            © 2025 abdi adama school | all rights reserved | made with ❤️ In Adama
-        </p>
-    </footer>
+        <div class="col-md-6 mb-3">
+          <input type="text" class="form-control" id="student_grade" placeholder="Applying for Grade" required>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <input type="text" class="form-control" id="parent_name" placeholder="Parent/Guardian Name" required>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <input type="email" class="form-control" id="parent_email" placeholder="Parent Email" required>
+        </div>
+        <div class="col-md-6 mb-3">
+          <input type="tel" class="form-control" id="parent_phone" placeholder="Parent Phone Number" required>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <input type="text" class="form-control" id="previous_school" placeholder="Previous School (if any)">
+      </div>
+
+      <div class="mb-3">
+        <textarea class="form-control" id="notes" rows="4" placeholder="Additional Information..."></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-warning">Submit Application</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p class="footer-bottom">© 2025 abdi adama school | all rights reserved | made with ❤️ In Adama</p>
+  </footer>
+
+  <script>
+    document.getElementById("admissionForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      let data = {
+        student_name: document.getElementById("student_name").value,
+        student_age: document.getElementById("student_age").value,
+        student_grade: document.getElementById("student_grade").value,
+        parent_name: document.getElementById("parent_name").value,
+        parent_email: document.getElementById("parent_email").value,
+        parent_phone: document.getElementById("parent_phone").value,
+        previous_school: document.getElementById("previous_school").value,
+        notes: document.getElementById("notes").value
+      };
+
+      fetch("https://script.google.com/macros/s/AKfycbyeyHP222WS5QeNr0hY0ud8JdNFtFukBqCSHDcJ8aLsxM6jZipn4OypoaAL4zhVn4II/exec", {
+          method: "POST",
+          mode: "no-cors",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data)
+        })
+        .then(() => {
+          alert("✅ Application Submitted Successfully!");
+          document.getElementById("admissionForm").reset();
+        })
+        .catch(err => alert("❌ Error: " + err));
+    });
+  </script>
+
+</body>
+
+</html>
+
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script>
         // initialize emailjs
         (function () {
@@ -222,7 +214,7 @@ background-color: #0b1a33;        }
                     alert("❌ Failed to submit. Please try again.");
                 });
         });
-    </script>
+    </script> -->
 
 </body>
 
