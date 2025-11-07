@@ -422,5 +422,39 @@ together, we look forward to shaping strong minds, positive values, and bright f
 </body>
 
   <script src="assets/js/custom.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+      const menu = document.getElementById("menu");
+
+      // Toggle submenu on mobile tap
+      document.querySelectorAll(".has-submenu > a").forEach(function (menuLink) {
+        menuLink.addEventListener("click", function (e) {
+          if (window.innerWidth <= 768) {
+            e.preventDefault();
+            menuLink.parentElement.classList.toggle("submenu-open");
+          }
+        });
+      });
+
+      // Close menu after clicking any link
+      document.querySelectorAll(".main-menu a").forEach(link => {
+        link.addEventListener("click", () => {
+          if (window.innerWidth <= 768) {
+            menu.classList.remove("active"); // << this is the real close action
+          }
+        });
+      });
+
+      // Also close menu if user taps outside menu area
+      document.addEventListener("click", function (e) {
+        if (window.innerWidth <= 768 && !menu.contains(e.target) && !e.target.classList.contains("menu-link")) {
+          menu.classList.remove("active");
+        }
+      });
+
+    });
+  </script>
 
 </html>
+
