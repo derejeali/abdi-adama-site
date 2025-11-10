@@ -364,7 +364,13 @@ a.menu-link { display: none; }
     object-fit: cover;
   }
 }
-
+@media (max-width: 768px) {
+  .image-bg {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+  }
+}
 
 .video-overlay {
     /* position: absolute; */
@@ -1840,9 +1846,9 @@ footer p a:hover {
   }
 
   /* remove hover behavior on mobile */
-  .main-nav .has-submenu > a {
+  /* .main-nav .has-submenu > a {
     pointer-events: none;
-  }
+  } */
   
 }
 @media (max-width: 768px) {
@@ -1902,9 +1908,7 @@ footer p a:hover {
     min-width: 200px;
   }
 
-  .footer-bottom {
-    /* margin-top: 40px; */
-  }
+  
 }
 
 .footer-botttom {
@@ -1924,3 +1928,119 @@ footer p a:hover {
   .padded {
     padding-top: 0px;
   }
+
+
+.main-nav {
+  display: none;
+}
+
+.main-nav.active {
+  display: block;
+}
+
+@media (min-width: 992px) {
+  .main-nav {
+    display: block !important;
+  }
+}
+
+
+.owner-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.owner-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.owner-text {
+  flex: 1;
+  color: #333;
+}
+
+.owner-text h2 {
+  color: #004aad;
+  font-size: 28px;
+}
+
+.owner-text blockquote {
+  font-style: italic;
+  color: #007b5e;
+  margin: 15px 0;
+  padding-left: 15px;
+  border-left: 3px solid #007b5e;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  background: #004aad;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.read-more:hover {
+  background: #0066cc;
+}
+
+@media (max-width: 768px) {
+  .owner-flex {
+    flex-direction: column;
+  }
+  .owner-image img {
+    max-width: 90%;
+  }
+}}
+
+.span-color {
+  /* color: #0066cc; */
+  font-weight: 600;
+}
+.stats-section {background-color: ;}
+.stats-section
+ .stat-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.stats-section .stat-box:hover {
+  transform: translateY(-5px);
+}
+
+.stats-section h3 {
+  font-size: 2.2rem;
+  color: #0066cc;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.plus {
+  font-size: 2rem;
+  color: #0066cc;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.stats-section p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.span-color {
+  color: #0066cc;
+}
