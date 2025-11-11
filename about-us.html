@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Abdi Adama School</title>
 
-    Bootstrap core CSS
+ 
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    Additional CSS Files
+   
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/abdiadama.css">
     <link rel="stylesheet" href="assets/css/owl.css">
@@ -147,17 +147,24 @@
   <div class="logo">
     <a href="index.html"><em>Abdi Adama</em> School</a>
   </div>
-  <a href="#menu" class="menu-link menu-trigger"><i style="font-size: 25px;  margin-top: -116px;"
-      class="fa fa-bars"></i></a>
 
+  <!-- hamburger -->
+  <a href="#menu" class="menu-trigger" aria-label="Open menu" title="menu">
+    <i class="fa fa-bars" style="font-size:25px"></i>
+  </a>
 
-  <nav id="menu" class="main-nav" role="navigation">
+  <nav id="menu" class="main-nav" role="navigation" aria-label="Main navigation">
     <ul class="main-menu">
-
       <li><a href="index.html">Home</a></li>
 
+      <!-- has-submenu now includes a separate button (submenu-toggle) for mobile -->
       <li class="has-submenu">
-        <a href="about-us.html">About Us</a>
+        <div class="parent-link">
+          <a href="about-us.html" style="color: white;">About Us</a>
+          <!-- this button only toggles the submenu on mobile -->
+          <button class="submenu-toggle" aria-label="Open submenu"><i class="fa fa-caret-down"></i></button>
+        </div>
+
         <ul class="sub-menu">
           <li><a href="about-us.html#about-us">What Makes Us Stand Out</a></li>
           <li><a href="about-us.html#mission-vision">Mission & Vision</a></li>
@@ -167,16 +174,11 @@
       </li>
 
       <li><a href="ourschool.html">Our School</a></li>
-
       <li><a href="admissions.html">Admissions</a></li>
-
       <li><a href="careers.html">Careers</a></li>
-
       <li><a href="contact-us.html">Contact Us</a></li>
-
     </ul>
   </nav>
-
 </header>
 
 
@@ -354,8 +356,8 @@ together, we look forward to shaping strong minds, positive values, and bright f
                     </p>
                 </div>
 
-                <div class="col-md-6 align-items-center" >
-                    <img style="margin-top: 54px; height: 400px; width: 600px ; margin-bottom: 10px; padding-left: 2%; border-radius: 5%;" src="assets/images/promise.jpg" alt="">
+                <div  class="col-md-6 align-items-center" >
+                    <img class="ourpromisephoto"  src="assets/images/promise.jpg" alt="">
                 </div>
 
             </div>
