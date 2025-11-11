@@ -205,13 +205,13 @@ a.menu-link { display: none; }
 }
 
 .main-menu li a {
-    padding: 10px 10px;
+    /* padding: 10px 10px; */
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     font-weight: 700;
     color: #fff;
-    border: 2px solid transparent;
+    /* border: 2px solid transparent; */
     transition: all 0.5s;
 }
 
@@ -239,14 +239,7 @@ a.menu-link { display: none; }
     visibility: visible;
 }
 
-.main-menu li .sub-menu li {
-    display: block;
-    line-height: 20px;
-    margin-left: 0px;
-    margin-bottom: 15px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #121b2f;
-}
+
 
 .main-menu li .sub-menu li:first-child {
     padding-top: 15px;
@@ -260,7 +253,7 @@ a.menu-link { display: none; }
 .main-menu li .sub-menu li a {
     font-size: 12px;
     font-weight: 500;
-    padding: 0px 15px;
+    /* padding: 0px 15px; */
     letter-spacing: 0.5px;
     border: none;
     transition: all 0.5s;
@@ -935,7 +928,7 @@ section.coming-soon form button {
 /* Courses */
 
 section.courses {
-    background-image: url(../images/choosing-bg.jpg);
+    /* background-image: url(../images/choosing-bg.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #172238;
@@ -1025,7 +1018,7 @@ section.courses .owl-carousel button.active {
 /* Video */
 
 section.video {
-    background-image: url(../images/video-bg.jpg);
+    /* background-image: url(../images/video-bg.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #172238;
@@ -2044,3 +2037,360 @@ footer p a:hover {
 .span-color {
   color: #0066cc;
 }
+
+
+
+
+/* hide sub-menu by default */
+.sub-menu {
+  display: none;
+}
+
+/* show it when the parent has 'open' */
+.has-submenu.open .sub-menu {
+  display: block;
+}
+
+/* basic mobile behavior (adjust if your theme already has similar rules) */
+.main-nav { display: none; }
+.main-nav.active { display: block; }
+
+/* hide submenus by default and show when parent has .open */
+.main-nav .sub-menu { display: none; }
+.main-nav .has-submenu.open > .sub-menu { display: block; }
+
+/* optional: body lock when nav open */
+body.nav-open { overflow: hidden; }
+
+/* show nav normally on desktop */
+@media (min-width: 993px) {
+  .main-nav {
+    display: block !important;
+  }
+}
+
+/* hide menu on mobile until the hamburger is clicked */
+@media (max-width: 992px) {
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #0b1a33; /* match your theme */
+    z-index: 9999;
+    text-align: left;
+    padding: 10px 0;
+  }
+
+  .main-nav.active {
+    display: block !important;
+  }
+
+  .main-nav ul.main-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-nav ul.main-menu li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .main-nav ul.main-menu li a {
+    display: block;
+    padding: 12px 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .main-nav ul.main-menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  /* submenu hidden by default */
+  .sub-menu {
+    display: none;
+    background-color: #12264b;
+  }
+
+  .has-submenu.open > .sub-menu {
+    display: block;
+  }
+}
+
+
+
+
+/* added  */
+
+/* ---------- basic nav visibility ---------- */
+.main-nav { display: block; } /* desktop default (override below for mobile) */
+
+/* parent-link keeps the link and arrow together */
+.has-submenu .parent-link { display:flex; align-items:center; justify-content:space-between; gap:10px; }
+.has-submenu .parent-link a { flex:1; text-decoration:none; color:inherit; }
+
+/* hide native submenu toggle button on desktop */
+.submenu-toggle { display:none; background:transparent; border:0; color:inherit; font-size:18px; }
+
+/* SUBMENU style */
+.sub-menu { list-style:none; margin:0; padding:0; }
+.sub-menu li a { display:block; padding:10px 20px; color:inherit; text-decoration:none; }
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 992px) {
+  .main-nav { display:none; position:absolute;  left:0; width:100%; background:#0b1a33; z-index:9999; }
+  .main-nav.active { display:block; }
+
+  .main-nav .main-menu { margin:0; padding:0; list-style:none; }
+  .main-nav .main-menu > li { border-bottom:1px solid rgba(255,255,255,0.06); }
+
+  .main-nav .main-menu > li > a,
+  .main-nav .main-menu > li .parent-link > a { display:block; padding:14px 18px; color:#fff; }
+
+  .submenu-toggle { display:inline-flex; align-items:center; justify-content:center; padding:8px; color:#fff; }
+
+  /* submenu collapsed by default */
+  .sub-menu { display:none; background:#12264b; }
+  .has-submenu.open > .sub-menu { display:block; }
+
+  /* style submenu items */
+  .sub-menu li a { padding:12px 32px; color:#fff; }
+
+  /* make sure the hamburger is visible and clickable */
+  .menu-trigger { display:inline-block; cursor:pointer; color:#fff; }
+}
+
+/* desktop polish (optional) */
+@media (min-width: 993px) {
+  .main-nav { display:block; position:static; background:transparent; }
+  .main-menu { display:flex; gap:22px; align-items:center; }
+  .main-menu li { position:relative; }
+  .sub-menu { position:absolute; top:100%; left:0; display:none; min-width:220px; background:#fff; box-shadow:0 6px 20px rgba(0,0,0,0.1); }
+  .has-submenu:hover > .sub-menu { display:block; }
+  .sub-menu li a { color:#222; padding:10px 14px; }
+  .submenu-toggle { display:none; }
+}
+
+
+
+/* --- overall header layout --- */
+.main-header {
+  /* position: relative;.navbar {
+  background-color: #001f3f; /* your dark blue */
+  /* padding: 0.5rem 2rem; */
+}
+
+.navbar-nav {
+  margin-left: auto; /* pushes menu to the right */
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  font-weight: 500;
+  margin-right: 20px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:last-child {
+  margin-right: 0; /* no gap after contact us */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffb400; /* your orange hover */
+}
+ */
+  width: 100%;
+  background-color: #0b1a33;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 15px 40px; */
+  z-index: 1000;
+}
+
+.logo a {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* --- hamburger / menu trigger --- */
+.menu-trigger {
+  display: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 26px;
+  position: absolute;
+  right: 25px;
+  top: 22px;
+  z-index: 1100;
+}
+
+/* --- main nav default (desktop) --- */
+.main-nav {
+  display: flex;
+  align-items:end;
+  gap: 30px;
+}
+
+.main-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 50px;
+}
+
+.main-menu li {
+  /* position: relative; */
+}
+
+.main-menu li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 12px;
+  font-weight: 700;
+}
+
+.main-menu li a:hover {
+  color: #f6b20f;
+}
+
+/* submenu on desktop */
+.sub-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 220px;
+  top: 100%;
+  left: 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.has-submenu:hover > .sub-menu {
+  display: block;
+}
+
+.sub-menu li a {
+  color: #333;
+  padding: 10px 20px;
+  display: block;
+}
+
+/* --- mobile layout --- */
+@media (max-width: 992px) {
+  .menu-trigger {
+    display: block;
+    height: 50px;
+    align-items: center;
+  }
+
+  .main-nav {
+    display: none;
+    position: absolute;
+    /* top: 70px; */
+    left: 0;
+    width: 100%;
+    background-color: #0b1a33;
+    flex-direction: column;
+    /* padding: 10px 0; */
+  }
+
+  .main-nav.active {
+    display: flex;
+  }
+
+  .main-menu {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .main-menu li {
+    width: 100%;
+    text-align: left;
+  }
+
+  .main-menu li a {
+    display: block;
+    width: 100%;
+    padding: 14px 25px;
+    color: #fff;
+  }
+
+  .submenu-toggle {
+    display: inline-block;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    margin-left: 5px;
+  }
+
+  .sub-menu {
+    display: none;
+    background-color: #12264b;
+    width: 100%;
+  }
+
+  .has-submenu.open > .sub-menu {
+    display: block;
+  }
+
+  .sub-menu li a {
+    padding-left: 65px;
+  }
+}
+.navbar-nav {
+  margin-right: 0 !important;
+  padding-right: 0 !important;
+}
+
+.navbar {
+  justify-content: space-between;
+}
+@media (max-width: 991px) {
+  .navbar-collapse {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  .navbar-brand {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .navbar-nav {
+    margin-top: 0 !important;
+  }
+  img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.ourpromisephoto {
+  width: 100%;
+}
+}
+.ourpromisephoto {
+  margin-top: 54px; 
+  height: 400px; 
+  width: 100% ; 
+  margin-bottom: 10px; 
+  border-radius: 5%;
+}
+
+
+.main-menu li .sub-menu li {
+    display: block;
+    line-height: 20px;
+    margin-left: 0px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #121b2f;
+}
+
