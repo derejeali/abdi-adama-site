@@ -15,6 +15,9 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Additional CSS Files -->
+   <!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
   <link rel="stylesheet" href="assets/css/fontawesome.css">
   <link rel="stylesheet" href="assets/css/abdiadama.css">
   <link rel="stylesheet" href="assets/css/owl.css">
@@ -47,7 +50,7 @@
 </head>
 
 
-<header class="main-header clearfix" role="header">
+<!-- <header class="main-header clearfix" role="header">
   <div class="logo">
     <a href="index.html"><em>Abdi Adama</em> School</a>
   </div>
@@ -81,7 +84,45 @@
     </ul>
   </nav>
 
+</header> -->
+<header class="main-header clearfix" role="header">
+  <div data-aos="fade-right" class="logo">
+    <a href="index.html" ><em>Abdi Adama</em> School</a>
+  </div>
+
+  <!-- hamburger -->
+  <a href="#menu" class="menu-trigger" aria-label="Open menu" title="menu">
+    <i class="fa fa-bars" style="font-size:25px"></i>
+  </a>
+
+  <nav id="menu" class="main-nav" role="navigation" aria-label="Main navigation">
+    <ul class="main-menu">
+      <li><a href="index.html">Home</a></li>
+
+      <!-- has-submenu now includes a separate button (submenu-toggle) for mobile -->
+      <li class="has-submenu">
+        <div class="parent-link">
+          <a href="about-us.html" style="color: white;">About Us</a>
+          <!-- this button only toggles the submenu on mobile -->
+          <button class="submenu-toggle" aria-label="Open submenu"><i class="fa fa-caret-down"></i></button>
+        </div>
+
+        <ul class="sub-menu">
+          <li><a href="about-us.html#about-us">What Makes Us Stand Out</a></li>
+          <li><a href="about-us.html#mission-vision">Mission & Vision</a></li>
+          <li><a href="about-us.html#about-us">Our Values</a></li>
+          <li><a href="about-us.html#promise">Our Promise to Parents</a></li>
+        </ul>
+      </li>
+
+      <li><a href="ourschool.html">Our School</a></li>
+      <li><a href="admissions.html">Admissions</a></li>
+      <li><a href="careers.html">Careers</a></li>
+      <li><a href="contact-us.html">Contact Us</a></li>
+    </ul>
+  </nav>
 </header>
+
 
 <body>
 
@@ -89,7 +130,7 @@
 
     <div class="video-bg">
 
-      <img class="image-bg" src="assets/images/schoolBuilding.jpg" alt="">
+      <img style="max-width: 100%;" class="image-bg" src="assets/images/schoolBuilding.jpg" alt="">
     </div>
     <div class="video-overlay header-text">
 
@@ -100,7 +141,7 @@
             <div class="welcomeee" style="margin-left: 8%;">
               <h6>Welcome To</h6>
 
-              <h2><em>Abdi Adama</em> School</h2>
+              <h2 data-aos="fade-right"><em>Abdi Adama</em> School</h2>
               <h6>To build the future of our children, we must plant the seeds of excellence today. A thriving
                 international
                 learning community <br>Supported by passionate educators and <br>Families.
@@ -113,7 +154,7 @@
             </div>
 
           </div>
-          <div class="col-md-6"><img class="covergirlnew" style="height: 68%; width: 68%;"
+          <div data-aos="fade-left" class="col-md-6"><img class="covergirlnew" style="height: 68%; width: 68%;"
               src="assets/images/cover-kid.png" alt="">
           </div>
         </div>
@@ -213,7 +254,7 @@
                   <img src="assets/images/choose-us-image-01.png" alt="">
                 </div>
                 <div class="col-md-6">
-                  <h4>Excellence in Education</h4>
+                  <h4 data-aos="zoom-in">Excellence in Education</h4>
                   <p>We nurture young minds from kindergarten through grade 12 with a well-rounded
                     curriculum that balances academics, arts, and sports. our goal is to help each
                     student reach their full potential and develop a lifelong love for learning. we
@@ -224,8 +265,8 @@
             </article>
             <article id='tabs-2'>
               <div class="row">
-                <div class="col-md-6">
-                  <img src="assets/images/choose-us-image-02.png" alt="">
+                <div data-aos="zoom-in" class="col-md-6">
+                  <img data-aos="zoom-in" src="assets/images/choose-us-image-02.png" alt="">
                 </div>
                 <div class="col-md-6">
                   <h4>Innovative Learning</h4>
@@ -267,14 +308,14 @@
 
       <!-- owner image -->
       <div class="col-md-6 mb-4 mb-md-0 text-center">
-        <img src="assets/images/founderone.JPG"
+        <img data-aos="slide-right" src="assets/images/founderone.JPG"
           style="border-radius: 10%; width: 75%; height: auto; border: 3px solid #ccc; opacity: 0.9;"
           alt="Ato Girma Lemi" class="img-fluid shadow">
       </div>
 
       <!-- owner speech -->
       <div class="col-md-6">
-        <h2 class="speech-title">Message from the <span class="span-color">Owner</span></h2>
+        <h2 data-aos="slide-up" class="speech-title">Message from the <span class="span-color">Owner</span></h2>
 
         <!-- English -->
         <p class="speech-text">
@@ -576,7 +617,7 @@ Odeeffannoo dabalataaf ykn mana barumsaa keenya daawwachuuf har'a nu qunnamaa.
               responsible and confident individuals. Whether in academics, arts, or sports,
               our students are encouraged to explore
               their talents and develop skills that prepare them for future success.</p>
-            <div class="main-button"><a rel="nofollow"
+            <div style="width: 100%;" class="main-button"><a style="width: 100%;" rel="nofollow"
                 href="https://drive.google.com/file/d/1dGwyS7pClTRLflLSDkj8a332nTsS8lNw/view?usp=sharing"
                 target="_parent">External
                 URL</a></div>
@@ -593,7 +634,7 @@ Odeeffannoo dabalataaf ykn mana barumsaa keenya daawwachuuf har'a nu qunnamaa.
             </figure> -->
             <figure>
               <figure>
-                <iframe width="560" height="477"
+                <iframe style="width: 100%;" width="560" height="477"
                   src="https://drive.google.com/file/d/1dGwyS7pClTRLflLSDkj8a332nTsS8lNw/preview" frameborder="0"
                   allow="autoplay; encrypted-media" allowfullscreen>
                 </iframe>
@@ -889,7 +930,7 @@ Odeeffannoo dabalataaf ykn mana barumsaa keenya daawwachuuf har'a nu qunnamaa.
         </div>
         <div class="col-md-6">
           <div id="map">
-            <iframe
+            <iframe style="width: 100%;"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.7524400044695!2d39.26461067399117!3d8.523399096700432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b216d72da70a1%3A0x824a599896635912!2sAbdi%20Adama%20School!5e0!3m2!1sen!2sca!4v1759991791750!5m2!1sen!2sca"
               width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
               referrerpolicy="no-referrer-when-downgrade" width="100%" height="422px" frameborder="0" style="border:0"
@@ -974,235 +1015,159 @@ Odeeffannoo dabalataaf ykn mana barumsaa keenya daawwachuuf har'a nu qunnamaa.
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-  <script type="text/javascript">
-    // initialize emailjs
-    (function () {
-      emailjs.init("h-pjBhUSf2AS5pgV4"); // ✅ your EmailJS public key
-    })();
-
-    function sendMail() {
-      var params = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        message: document.getElementById("message").value,
-      };
-
-      const serviceID = "service_ilxce5d";   // ✅ your service ID
-      const templateID = "template_796gmuk"; // ✅ your template ID
-
-      emailjs.send(serviceID, templateID, params)
-        .then((res) => {
-          document.getElementById("name").value = "";
-          document.getElementById("email").value = "";
-          document.getElementById("message").value = "";
-          console.log("Success:", res);
-          alert("✅ Your message was sent successfully!");
-        })
-        .catch((err) => {
-          console.error("Error:", err);
-          alert("❌ Failed to send. Please check console for details.");
-        });
-    }
-  </script>
-  <script type="text/javascript">
-
-    //according to loftblog tut
-    $('.nav li:first').addClass('active');
-
-    var showSection = function showSection(section, isAnimate) {
-      var
-        direction = section.replace(/#/, ''),
-        reqSection = $('.section').filter('[data-section="' + direction + '"]'),
-        reqSectionPos = reqSection.offset().top - 0;
-
-      if (isAnimate) {
-        $('body, html').animate({
-          scrollTop: reqSectionPos
-        },
-          800);
-      } else {
-        $('body, html').scrollTop(reqSectionPos);
-      }
-
-    };
-
-    var checkSection = function checkSection() {
-      $('.section').each(function () {
-        var
-          $this = $(this),
-          topEdge = $this.offset().top - 80,
-          bottomEdge = topEdge + $this.height(),
-          wScroll = $(window).scrollTop();
-        if (topEdge < wScroll && bottomEdge > wScroll) {
-          var
-            currentId = $this.data('section'),
-            reqLink = $('a').filter('[href*=\\#' + currentId + ']');
-          reqLink.closest('li').addClass('active').
-            siblings().removeClass('active');
-        }
-      });
-    };
-
-    $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
-      if ($(e.target).hasClass('external')) {
-        return;
-      }
-      // e.preventDefault();
-      $('#menu').removeClass('active');
-      showSection($(this).attr('href'), true);
-    });
-
-    $(window).scroll(function () {
-      checkSection();
-    });
-  </script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-
-      // toggle submenus on mobile
-      document.querySelectorAll(".main-nav .has-submenu").forEach(function (item) {
-        item.addEventListener("click", function (e) {
-          if (window.innerWidth <= 768) {
-            e.preventDefault(); // prevent immediate navigation
-            this.classList.toggle("submenu-open");
-          }
-        });
-      });
-
-      // auto-close menu when clicking any link
-      document.querySelectorAll(".main-nav a").forEach(function (link) {
-        link.addEventListener("click", function () {
-          if (window.innerWidth <= 768) {
-            const trigger = document.querySelector('.menu-trigger');
-            if (trigger) {
-              trigger.classList.remove('active');
-            }
-            const menu = document.querySelector('.main-nav ul');
-            if (menu) {
-              menu.classList.remove('active');
-            }
-          }
-        });
-      });
-
-    });
-  </script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-
-      // toggle submenu on tap (mobile)
-      document.querySelectorAll(".has-submenu > a").forEach(function (menuLink) {
-        menuLink.addEventListener("click", function (e) {
-          if (window.innerWidth <= 768) {
-            e.preventDefault();
-            menuLink.parentElement.classList.toggle("submenu-open");
-          }
-        });
-      });
-
-      // Close menu when clicking any link
-      document.querySelectorAll(".main-menu a").forEach(link => {
-        link.addEventListener("click", () => {
-          if (window.innerWidth <= 768) {
-            document.querySelector(".main-nav").classList.remove("active");
-          }
-        });
-      });
-
-    });
-  </script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-
-      const menu = document.getElementById("menu");
-
-      // Toggle submenu on mobile tap
-      document.querySelectorAll(".has-submenu > a").forEach(function (menuLink) {
-        menuLink.addEventListener("click", function (e) {
-          if (window.innerWidth <= 768) {
-            e.preventDefault();
-            menuLink.parentElement.classList.toggle("submenu-open");
-          }
-        });
-      });
-
-      // Close menu after clicking any link
-      document.querySelectorAll(".main-menu a").forEach(link => {
-        link.addEventListener("click", () => {
-          if (window.innerWidth <= 768) {
-            menu.classList.remove("active"); // << this is the real close action
-          }
-        });
-      });
-
-      // Also close menu if user taps outside menu area
-      document.addEventListener("click", function (e) {
-        if (window.innerWidth <= 768 && !menu.contains(e.target) && !e.target.classList.contains("menu-link")) {
-          menu.classList.remove("active");
-        }
-      });
-
-    });
-  </script>
-
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const counters = document.querySelectorAll('.counter');
-      let started = false;
-
-      const startCounting = () => {
-        counters.forEach(counter => {
-          const updateCount = () => {
-            const target = +counter.getAttribute('data-target');
-            const count = +counter.innerText;
-            const increment = target / 100;
-
-            if (count < target) {
-              counter.innerText = Math.ceil(count + increment);
-              setTimeout(updateCount, 30);
-            } else {
-              counter.innerText = target.toLocaleString();
-            }
-          };
-          updateCount();
-        });
-      };
-
-      const observer = new IntersectionObserver(entries => {
-        if (entries[0].isIntersecting && !started) {
-          started = true;
-          startCounting();
-        }
-      }, { threshold: 0.3 });
-
-      observer.observe(document.querySelector('#school-stats'));
-    });
-  </script>
-  <script>
-    document.getElementById('read-more-btn').addEventListener('click', function () {
-      const moreText = document.getElementById('more-text');
-      if (moreText.style.display === "none") {
-        moreText.style.display = "inline";
-        this.textContent = "show less";
-      } else {
-        moreText.style.display = "none";
-        this.textContent = "read more";
-      }
-    });
-  </script>
+<!-- ✅ EMAILJS -->
 <script>
-  const readMoreBtn = document.getElementById('read-more-btn');
-  const hiddenTexts = document.querySelectorAll('.hidden-content');
+(function () {
+  emailjs.init("h-pjBhUSf2AS5pgV4");
+})();
 
-  readMoreBtn.addEventListener('click', () => {
-    hiddenTexts.forEach(el => {
-      el.style.display = (el.style.display === 'none' || el.style.display === '') ? 'inline' : 'none';
+function sendMail() {
+  const params = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+  };
+
+  const serviceID = "service_ilxce5d";
+  const templateID = "template_796gmuk";
+
+  emailjs.send(serviceID, templateID, params)
+    .then(() => {
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("message").value = "";
+      alert("✅ Your message was sent successfully!");
+    })
+    .catch(() => {
+      alert("❌ Failed to send. Please try again later.");
     });
+}
 
-    // toggle button text
-    readMoreBtn.textContent = (readMoreBtn.textContent === 'Read More') ? 'Read Less' : 'Read More';
+</script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const nav = document.querySelector('.main-nav');
+  const trigger = document.querySelector('.menu-trigger');
+  const submenuToggles = document.querySelectorAll('.submenu-toggle');
+
+  // hamburger toggle
+  if (trigger && nav) {
+    trigger.addEventListener('click', function (e) {
+      e.preventDefault();
+      nav.classList.toggle('active');
+      document.body.classList.toggle('nav-open', nav.classList.contains('active'));
+    });
+  }
+
+  // submenu toggle buttons (mobile only)
+  submenuToggles.forEach(btn => {
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation(); // prevent click from bubbling to parent anchors
+      const parentLi = this.closest('.has-submenu');
+      if (!parentLi) return;
+      // toggle open class
+      parentLi.classList.toggle('open');
+    });
+  });
+
+  // close nav when clicking any normal link (mobile)
+  document.querySelectorAll('.main-nav a').forEach(a => {
+    a.addEventListener('click', function (e) {
+      // if this is the About Us text link (normal link), let it navigate; we still close the menu for cleanliness
+      if (window.innerWidth <= 992) {
+        // small delay ensures link navigation works on some mobile browsers
+        setTimeout(() => {
+          if (nav) nav.classList.remove('active');
+          document.body.classList.remove('nav-open');
+          document.querySelectorAll('.has-submenu.open').forEach(li => li.classList.remove('open'));
+        }, 100);
+      }
+    });
+  });
+
+  // click outside to close (mobile)
+  document.addEventListener('click', function (e) {
+    if (window.innerWidth <= 992 && !e.target.closest('.main-nav') && !e.target.closest('.menu-trigger')) {
+      if (nav) nav.classList.remove('active');
+      document.body.classList.remove('nav-open');
+      document.querySelectorAll('.has-submenu.open').forEach(li => li.classList.remove('open'));
+    }
+  });
+
+  // on resize, remove mobile-only classes if switching to desktop
+  window.addEventListener('resize', function () {
+    if (window.innerWidth > 992) {
+      if (nav) nav.classList.remove('active');
+      document.body.classList.remove('nav-open');
+      document.querySelectorAll('.has-submenu.open').forEach(li => li.classList.remove('open'));
+    }
+  });
+});
+</script>
+
+
+
+
+<!-- ✅ COUNTER ANIMATION -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll('.counter');
+  let started = false;
+
+  const startCounting = () => {
+    counters.forEach(counter => {
+      const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+        const increment = target / 33;
+
+        if (count < target) {
+          counter.innerText = Math.ceil(count + increment);
+          setTimeout(updateCount, 30);
+        } else {
+          counter.innerText = target.toLocaleString() ;
+        }
+      };
+      updateCount();
+    });
+  };
+
+  const observer = new IntersectionObserver(entries => {
+    if (entries[0].isIntersecting && !started) {
+      started = true;
+      startCounting();
+    }
+  }, { threshold: 0.3 });
+
+  const statsSection = document.querySelector('#school-stats');
+  if (statsSection) observer.observe(statsSection);
+});
+</script>
+
+<!-- ✅ READ MORE (OWNER MESSAGE & MULTI-LANGUAGE TEXTS) -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const btn = document.getElementById("read-more-btn");
+  const hiddenElements = document.querySelectorAll("#more-text, .hidden-content");
+
+  if (btn) {
+    btn.addEventListener("click", function () {
+      hiddenElements.forEach(el => {
+        el.style.display = (el.style.display === "none" || el.style.display === "") ? "inline" : "none";
+      });
+      this.textContent = this.textContent === "read more" ? "show less" : "read more";
+    });
+  }
+});
+</script>
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 500, // animation duration in ms
+    once: true      // animation happens only once when scrolling down
   });
 </script>
 
